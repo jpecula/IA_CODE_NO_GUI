@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class UserInputReader {
+
+    //Reads the input from the user for the budget
     public static int readBudget(Scanner scanner) {
         int budget = 0;
         boolean validInput = false;
@@ -11,12 +13,13 @@ public class UserInputReader {
                 validInput = true;
             } else {
                 System.out.println("Please enter an integer value.");
-                scanner.nextLine(); // clear the input buffer
+                scanner.nextLine(); //Clears the input
             }
         }
         return budget;
     }
 
+    //Reads the input from the user for the amount spent
     public static int readAmountSpent(Scanner scanner) {
         int amountSpent = 0;
         boolean validInput = false;
@@ -27,7 +30,7 @@ public class UserInputReader {
                 validInput = true;
             } else {
                 System.out.println("Please enter an integer value.");
-                scanner.nextLine(); // clear the input buffer
+                scanner.nextLine(); //Clears the input
             }
         }
         return amountSpent;
